@@ -81,9 +81,9 @@ function keyTyped() {
 	playSynth();
 }
 
-function touchStarted() {
-	hiddenInput.elt.focus();
-}
+// function touchStarted() {
+// 	hiddenInput.elt.focus();
+// }
 
 function playSynth() {
 	userStartAudio();
