@@ -71,7 +71,7 @@ function mousePressed() {
 	);
 }
 
-function keyReleased() {
+function keyTyped() {
 	console.log(key);
 	textParticles.push(
 		new TextParticle(
