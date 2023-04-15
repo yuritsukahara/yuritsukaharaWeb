@@ -1,11 +1,11 @@
 let particles = [];
 let textParticles = [];
-let hiddenInput;
+// let hiddenInput;
 let monoSynth;
 let arcoTamanho = 1;
 
 function setup() {
-	hiddenInput = createInput('');
+	// hiddenInput = createInput('');
 	monoSynth = new p5.MonoSynth();
 }
 
