@@ -57,11 +57,19 @@ function draw() {
 	singularity.show();
 }
 
-function mousePressed() {
-	particles.push(
-		new Particle(mouseX, mouseY, ...[, ,], random(0, 255), frameCount)
-	);
-}
+// function mousePressed() {
+// 	particles.push(
+// 		new Particle(
+// 			mouseX,
+// 			mouseY,
+// 			...[, ,],
+// 			random(0, 255),
+// 			random(0, 255),
+// 			random(0, 255),
+// 			frameCount
+// 		)
+// 	);
+// }
 
 function keyPressed() {
 	console.log(keyboardMap[keyCode]);
