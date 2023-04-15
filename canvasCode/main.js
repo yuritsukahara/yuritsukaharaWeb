@@ -69,6 +69,7 @@ function mousePressed() {
 			frameCount
 		)
 	);
+	playSynth();
 }
 
 function keyTyped() {
