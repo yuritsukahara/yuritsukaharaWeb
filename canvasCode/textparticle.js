@@ -22,7 +22,7 @@ class TextParticle {
 	}
 
 	show() {
-		textoConvertido = keyboardMap[this.key];
+		let textoConvertido = keyboardMap[this.key];
 		textSize(textoConvertido.toString());
 		fill(this.r, this.g, this.b, this.alpha);
 		text(this.key, this.posX, this.posY);
