@@ -64,7 +64,6 @@ function draw() {
 // }
 
 function keyPressed() {
-	console.log(keyboardMap[keyCode]);
 	textParticles.push(
 		new TextParticle(
 			keyCode,
