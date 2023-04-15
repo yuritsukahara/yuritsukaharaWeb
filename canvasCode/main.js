@@ -86,6 +86,7 @@ function keyPressed() {
 			frameCount
 		)
 	);
+	playSynth();
 }
 
 // function touchStarted() {
