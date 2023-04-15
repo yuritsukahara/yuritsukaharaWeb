@@ -4,8 +4,6 @@ let hiddenInput;
 let monoSynth;
 let arcoTamanho = 1;
 
-$('input').attr('autocomplete', 'off');
-
 function setup() {
 	hiddenInput = createInput('');
 	monoSynth = new p5.MonoSynth();
@@ -59,19 +57,19 @@ function draw() {
 	singularity.show();
 }
 
-function mousePressed() {
-	particles.push(
-		new Particle(
-			mouseX,
-			mouseY,
-			...[, ,],
-			random(0, 255),
-			random(0, 255),
-			random(0, 255),
-			frameCount
-		)
-	);
-}
+// function mousePressed() {
+// 	particles.push(
+// 		new Particle(
+// 			mouseX,
+// 			mouseY,
+// 			...[, ,],
+// 			random(0, 255),
+// 			random(0, 255),
+// 			random(0, 255),
+// 			frameCount
+// 		)
+// 	);
+// }
 
 function keyPressed() {
 	console.log(keyboardMap[keyCode]);
@@ -88,12 +86,21 @@ function keyPressed() {
 			frameCount
 		)
 	);
-	playSynth();
 }
 
 function touchStarted() {
 	hiddenInput.elt.focus();
-	$(hiddenInput).trigger('focus');
+	particles.push(
+		new Particle(
+			mouseX,
+			mouseY,
+			...[, ,],
+			random(0, 255),
+			random(0, 255),
+			random(0, 255),
+			frameCount
+		)
+	);
 }
 
 function playSynth() {
