@@ -91,6 +91,7 @@ function keyPressed() {
 
 function touchStarted() {
 	hiddenInput.elt.focus();
+	prompt();
 }
 
 function playSynth() {
