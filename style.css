@@ -1,0 +1,53 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	color: palegreen;
+}
+
+body {
+	background-color: black;
+	color: white;
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+	padding: 5%;
+}
+
+#defaultCanvas0 {
+	display: flex;
+	margin: auto;
+}
+
+header > * {
+	padding: 5px;
+}
+
+footer {
+	font-size: 16px;
+	position: absolute;
+	bottom: 10px;
+}
+
+.flex-container {
+	flex-wrap: wrap;
+	align-content: space-between;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+div#canvasContainer {
+	position: absolute;
+	top: 0;
+	z-index: -1;
+}
+
+img#logo {
+	max-width: 30px;
+}
+
+input {
+	display: none;
+}
