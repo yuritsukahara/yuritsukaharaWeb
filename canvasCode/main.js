@@ -71,11 +71,11 @@ function mousePressed() {
 	);
 }
 
-function keyPressed() {
-	console.log(keyCode);
+function keyReleased() {
+	console.log(key);
 	textParticles.push(
 		new TextParticle(
-			keyCode,
+			key,
 			random(0, windowWidth),
 			random(0, windowHeight),
 			random(20, 50),
