@@ -90,17 +90,17 @@ function keyPressed() {
 
 function touchStarted() {
 	hiddenInput.elt.focus();
-	particles.push(
-		new Particle(
-			mouseX,
-			mouseY,
-			...[, ,],
-			random(0, 255),
-			random(0, 255),
-			random(0, 255),
-			frameCount
-		)
-	);
+	// particles.push(
+	// 	new Particle(
+	// 		mouseX,
+	// 		mouseY,
+	// 		...[, ,],
+	// 		random(0, 255),
+	// 		random(0, 255),
+	// 		random(0, 255),
+	// 		frameCount
+	// 	)
+	// );
 }
 
 function playSynth() {
