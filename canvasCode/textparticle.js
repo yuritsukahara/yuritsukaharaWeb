@@ -22,7 +22,8 @@ class TextParticle {
 	}
 
 	show() {
-		textSize(this.size);
+		textoConvertido = keyboardMap[this.key];
+		textSize(textoConvertido.toString());
 		fill(this.r, this.g, this.b, this.alpha);
 		text(this.key, this.posX, this.posY);
 	}

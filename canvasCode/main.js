@@ -67,7 +67,7 @@ function keyPressed() {
 	console.log(keyboardMap[keyCode]);
 	textParticles.push(
 		new TextParticle(
-			keyboardMap[keyCode],
+			keyCode,
 			random(0, windowWidth),
 			random(0, windowHeight),
 			random(20, 50),
