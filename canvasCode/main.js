@@ -59,15 +59,23 @@ function draw() {
 
 function mousePressed() {
 	particles.push(
-		new Particle(mouseX, mouseY, ...[, ,], random(0, 255), frameCount)
+		new Particle(
+			mouseX,
+			mouseY,
+			...[, ,],
+			random(0, 255),
+			random(0, 255),
+			random(0, 255),
+			frameCount
+		)
 	);
 }
 
 function keyPressed() {
-	console.log(key);
+	console.log(keyCode);
 	textParticles.push(
 		new TextParticle(
-			key,
+			keyCode,
 			random(0, windowWidth),
 			random(0, windowHeight),
 			random(20, 50),
@@ -78,7 +86,6 @@ function keyPressed() {
 			frameCount
 		)
 	);
-	playSynth();
 }
 
 // function touchStarted() {
