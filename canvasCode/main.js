@@ -4,6 +4,8 @@ let hiddenInput;
 let monoSynth;
 let arcoTamanho = 1;
 
+$('input').attr('autocomplete', 'off');
+
 function setup() {
 	hiddenInput = createInput('');
 	monoSynth = new p5.MonoSynth();
