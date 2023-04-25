@@ -9,7 +9,7 @@ let linearLenght;
 function setup() {
 	// pixelDensity(1);
 	frameRate(30);
-	let renderer = createCanvas(windowWidth * 0.9, windowHeight);
+	let renderer = createCanvas(windowWidth, windowHeight);
 	renderer.parent('canvasContainer');
 
 	colorMode(HSB);
@@ -27,7 +27,7 @@ function setup() {
 	if (width < 500) {
 		speed = 7;
 		sizeBall = width * 3;
-		linearLenght = windowHeight * 2;
+		linearLenght = windowHeight;
 	}
 }
 
