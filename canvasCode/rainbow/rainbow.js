@@ -25,8 +25,8 @@ function setup() {
 	linearLenght = width / 2.53;
 
 	if (width < 500) {
-		speed = 10;
-		sizeBall = width * 2.5;
+		speed = 9;
+		sizeBall = width * 2.8;
 		linearLenght = windowWidth;
 	}
 }
