@@ -4,8 +4,10 @@ let circlesAngles = [1 / 2, 1 / 6, 1 / 3, 1 / 2, 7 / 4];
 let randomConst = [];
 
 function setup() {
-	let renderer = createCanvas(windowWidth * 0.9, windowHeight);
-	renderer.parent('canvasContainer');
+	// let renderer = createCanvas(windowWidth * 0.9, windowHeight);
+	// renderer.parent('canvasContainer');
+
+	createCanvas(windowWidth * 0.9, windowWidth * 0.9);
 
 	pixelDensity(1);
 
@@ -58,7 +60,7 @@ function ellipseC(x, y, rotation, rotation2) {
 		stroke(colors[i]);
 		strokeWeight(10);
 		let angle = map(i, 0, 360, 0, TWO_PI);
-		arc(0, 0, 400, 400, angle, angle + TWO_PI / 180);
+		arc(0, 0, 800, 800, angle, angle + TWO_PI / 180);
 	}
 	endShape();
 	pop();
