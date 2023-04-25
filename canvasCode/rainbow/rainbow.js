@@ -8,7 +8,7 @@ let linearLenght;
 
 function setup() {
 	// pixelDensity(1);
-	frameRate(30);
+	frameRate(60);
 	let renderer = createCanvas(windowWidth, windowHeight);
 	renderer.parent('canvasContainer');
 
@@ -26,7 +26,7 @@ function setup() {
 
 	if (width < 500) {
 		speed = 10;
-		sizeBall = width * 3;
+		sizeBall = width * 2.5;
 		linearLenght = windowWidth;
 	}
 }
