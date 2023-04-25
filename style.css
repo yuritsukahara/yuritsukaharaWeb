@@ -52,11 +52,11 @@ footer {
 	justify-content: space-around;
 }
 
-div#canvasContainer {
+/* div#canvasContainer {
 	position: absolute;
 	top: 0;
 	z-index: -1;
-}
+} */
 
 img#logo {
 	max-width: 30px;

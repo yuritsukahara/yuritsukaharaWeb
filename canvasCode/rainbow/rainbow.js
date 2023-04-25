@@ -4,10 +4,8 @@ let circlesAngles = [1 / 2, 1 / 6, 1 / 3, 1 / 2, 7 / 4];
 let randomConst = [];
 
 function setup() {
-	// let renderer = createCanvas(windowWidth * 0.9, windowHeight);
-	// renderer.parent('canvasContainer');
-
-	createCanvas(windowWidth * 0.9, windowWidth * 0.9);
+	let renderer = createCanvas(windowWidth * 0.9, windowWidth * 0.9);
+	renderer.parent('canvasContainer');
 
 	pixelDensity(1);
 
