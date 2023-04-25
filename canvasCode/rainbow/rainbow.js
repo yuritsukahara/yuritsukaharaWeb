@@ -8,7 +8,7 @@ let linearLenght;
 
 function setup() {
 	// pixelDensity(1);
-	frameRate(120);
+	frameRate(50);
 	let renderer = createCanvas(windowWidth, windowHeight);
 	renderer.parent('canvasContainer');
 
