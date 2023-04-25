@@ -2,7 +2,8 @@ let colors = [];
 let moveX = 0;
 let circlesAngles = [1 / 2, 1 / 6, 1 / 3, 1 / 2, 7 / 4];
 let randomConst = [];
-let speed = 2;
+let speed = 3;
+let sizeBall;
 
 function setup() {
 	// pixelDensity(1);
@@ -42,7 +43,7 @@ function draw() {
 	fill('#000');
 	rect(0, 0, 100, 50);
 	fill('#fff');
-	// text(moveX.toFixed(2), 30, 30);
+	text(width.toFixed(2), 30, 30);
 }
 
 function ellipseC(x, y, rotation, rotation2) {
