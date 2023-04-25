@@ -2,7 +2,7 @@ let colors = [];
 let moveX = 0;
 let circlesAngles = [1 / 2, 1 / 6, 1 / 3, 1 / 2, 7 / 4];
 let randomConst = [];
-let speed = 3;
+let speed = 2;
 let sizeBall;
 let linearLenght;
 
