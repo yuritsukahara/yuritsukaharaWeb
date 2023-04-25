@@ -4,9 +4,10 @@ let circlesAngles = [1 / 2, 1 / 6, 1 / 3, 1 / 2, 7 / 4];
 let randomConst = [];
 
 function setup() {
+	pixelDensity(1);
+	frameRate(30);
 	let renderer = createCanvas(windowWidth * 0.9, windowHeight);
 	renderer.parent('canvasContainer');
-	pixelDensity(1);
 
 	colorMode(HSB);
 	for (let i = 0; i < 360; i++) {
@@ -41,7 +42,6 @@ function draw() {
 	rect(0, 0, 100, 50);
 	fill('#fff');
 	// text(moveX.toFixed(2), 30, 30);
-	// text(width + 'des(encontros)' + height, 30, 30);
 }
 
 function ellipseC(x, y, rotation, rotation2) {
