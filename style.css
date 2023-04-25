@@ -28,6 +28,10 @@ header {
 	align-items: center;
 }
 
+.description {
+	max-width: 40%;
+}
+
 header > div > * {
 	padding: 5px;
 	list-style: none;
