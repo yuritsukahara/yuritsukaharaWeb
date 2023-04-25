@@ -22,7 +22,7 @@ function setup() {
 	}
 
 	if (width < 500) {
-		speed = 5;
+		speed = 7;
 		sizeBall = width * 3;
 		linearLenght = windowHeight;
 	}
@@ -53,7 +53,7 @@ function draw() {
 	fill('#000');
 	rect(0, 0, 100, 50);
 	fill('#fff');
-	text(width.toFixed(2), 30, 30);
+	text('teste' + width.toFixed(2), 30, 30);
 }
 
 function ellipseC(x, y, rotation, rotation2) {
