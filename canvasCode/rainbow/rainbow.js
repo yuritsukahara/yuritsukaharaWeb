@@ -4,6 +4,7 @@ let circlesAngles = [1 / 2, 1 / 6, 1 / 3, 1 / 2, 7 / 4];
 let randomConst = [];
 let speed = 3;
 let sizeBall;
+let linearLenght;
 
 function setup() {
 	// pixelDensity(1);
@@ -21,11 +22,13 @@ function setup() {
 	}
 
 	if (width < 500) {
-		speed = 6;
+		speed = 5;
 		sizeBall = width * 3;
+		linearLenght = height;
 	}
 
 	sizeBall = width;
+	linearLenght = width / 2.53;
 }
 
 function draw() {
@@ -35,7 +38,7 @@ function draw() {
 	for (let i = 1; i <= circlesAngles.length; i++) {
 		ellipseC(
 			0,
-			(width / 2.53) * cos(speed * moveX + (PI / 2) * randomConst[i]),
+			linearLenght * cos(speed * moveX + (PI / 2) * randomConst[i]),
 			PI + randomConst[i],
 			PI * circlesAngles[i]
 		);
