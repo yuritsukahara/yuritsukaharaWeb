@@ -38,9 +38,9 @@ function draw() {
 	}
 
 	// console.log(moveX, PI);
-	fill('#000');
-	rect(0, 0, 100, 50);
-	fill('#fff');
+	// fill('#000');
+	// rect(0, 0, 100, 50);
+	// fill('#fff');
 	// text(moveX.toFixed(2), 30, 30);
 	// text(width + 'des(encontros)' + height, 30, 30);
 }
