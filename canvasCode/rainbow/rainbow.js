@@ -7,6 +7,8 @@ function setup() {
 	let renderer = createCanvas(windowWidth * 0.9, windowHeight);
 	renderer.parent('canvasContainer');
 
+	pixelDensity(1);
+
 	colorMode(HSB);
 	for (let i = 0; i < 360; i++) {
 		colors[i] = color(i, 100, 100);
