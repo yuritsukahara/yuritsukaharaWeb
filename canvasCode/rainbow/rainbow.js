@@ -22,7 +22,7 @@ function setup() {
 
 	if (width < 500) {
 		speed = 6;
-		sizeBall = 600;
+		sizeBall = width * 3;
 	}
 
 	sizeBall = width;
