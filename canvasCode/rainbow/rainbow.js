@@ -19,6 +19,13 @@ function setup() {
 	for (let i = 0; i <= circlesAngles.length; i++) {
 		randomConst[i] = random(0, i * PI);
 	}
+
+	if (width < 500) {
+		speed = 6;
+		sizeBall = 600;
+	}
+
+	sizeBall = width;
 }
 
 function draw() {
@@ -59,7 +66,7 @@ function ellipseC(x, y, rotation, rotation2) {
 		stroke(colors[i]);
 		strokeWeight(10);
 		let angle = map(i, 0, 360, 0, TWO_PI);
-		arc(0, 0, width, width, angle, angle + TWO_PI / 180);
+		arc(0, 0, sizeBall, sizeBall, angle, angle + TWO_PI / 180);
 	}
 	endShape();
 	pop();
