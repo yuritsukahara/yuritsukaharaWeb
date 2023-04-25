@@ -7,8 +7,8 @@ let sizeBall;
 let linearLenght;
 
 function setup() {
-	pixelDensity(1);
-	frameRate(30);
+	// pixelDensity(1);
+	frameRate(120);
 	let renderer = createCanvas(windowWidth, windowHeight);
 	renderer.parent('canvasContainer');
 
