@@ -21,14 +21,14 @@ function setup() {
 		randomConst[i] = random(0, i * PI);
 	}
 
-	if (width < 500) {
-		speed = 7;
-		sizeBall = width * 3;
-		linearLenght = windowHeight;
-	}
-
 	sizeBall = width;
 	linearLenght = width / 2.53;
+
+	if (width < 500) {
+		speed = 7;
+		sizeBall = width * 6;
+		linearLenght = windowHeight * 2;
+	}
 }
 
 function draw() {
@@ -53,7 +53,7 @@ function draw() {
 	fill('#000');
 	rect(0, 0, 100, 50);
 	fill('#fff');
-	text('teste' + width.toFixed(2), 30, 30);
+	text('teste2' + width.toFixed(2), 30, 30);
 }
 
 function ellipseC(x, y, rotation, rotation2) {
