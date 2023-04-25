@@ -2,9 +2,10 @@ let colors = [];
 let moveX = 0;
 let circlesAngles = [1 / 2, 1 / 6, 1 / 3, 1 / 2, 7 / 4];
 let randomConst = [];
+let speed = 2;
 
 function setup() {
-	pixelDensity(1);
+	// pixelDensity(1);
 	frameRate(30);
 	let renderer = createCanvas(windowWidth * 0.9, windowHeight);
 	renderer.parent('canvasContainer');
@@ -26,13 +27,13 @@ function draw() {
 	for (let i = 1; i <= circlesAngles.length; i++) {
 		ellipseC(
 			0,
-			(width / 2.53) * cos(1.5 * moveX + (PI / 2) * randomConst[i]),
+			(width / 2.53) * cos(speed * moveX + (PI / 2) * randomConst[i]),
 			PI + randomConst[i],
 			PI * circlesAngles[i]
 		);
 	}
 
-	if (1.5 * moveX >= PI * 2) {
+	if (speed * moveX >= PI * 2) {
 		moveX = 0;
 		moveY = 0;
 	}
