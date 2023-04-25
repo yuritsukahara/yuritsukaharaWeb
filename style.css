@@ -4,7 +4,7 @@
 }
 
 a {
-	color: blue;
+	color: rgb(24, 211, 211);
 }
 
 body {
@@ -21,7 +21,19 @@ body {
 	margin: auto;
 }
 
-header > * {
+header {
+	display: flex;
+	align-content: space-between;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header > div > * {
+	padding: 5px;
+	list-style: none;
+}
+
+.padding > * {
 	padding: 5px;
 }
 
