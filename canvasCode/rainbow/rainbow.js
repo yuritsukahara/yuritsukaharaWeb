@@ -23,17 +23,18 @@ function setup() {
 
 	sizeBall = width;
 	linearLenght = width / 2.53;
+	moveX += 0.01;
 
 	if (width < 500) {
 		speed = 9;
 		sizeBall = width * 2.8;
 		linearLenght = windowWidth;
+		moveX += 0.005;
 	}
 }
 
 function draw() {
 	background('rgba(0,0,0, 0.1)');
-	moveX += 0.01;
 
 	for (let i = 1; i <= circlesAngles.length; i++) {
 		ellipseC(
