@@ -25,7 +25,7 @@ function setup() {
 	linearLenght = width / 2.53;
 
 	if (width < 500) {
-		speed = 9;
+		speed = 12;
 		sizeBall = width * 2.8;
 		linearLenght = windowWidth;
 	}
@@ -35,7 +35,7 @@ function draw() {
 	background('rgba(0,0,0, 0.1)');
 
 	if (width < 500) {
-		moveX += 0.005;
+		moveX += 0.01 / 4;
 	} else {
 		moveX += 0.01;
 	}
